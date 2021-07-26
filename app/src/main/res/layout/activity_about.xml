@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:text="Health Monitor"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:text="An IoT Based Patient Monitoring System"
+            android:textColor="@color/blue_500"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:id="@+id/group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/round_light_background"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/group_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:paddingLeft="10dp"
+                android:text="Group Details"
+                android:textAllCaps="false"
+                android:background="@drawable/ripple_effect"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/group_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/group_details"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:paddingLeft="8dp"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@id/group_details_button"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/component_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/round_light_background"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/component_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:paddingLeft="10dp"
+                android:text="Component Details"
+                android:textAllCaps="false"
+                android:background="@drawable/ripple_effect"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/component_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/component_details"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:paddingLeft="8dp"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@id/group_details_button"/>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

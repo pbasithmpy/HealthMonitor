@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/title0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh rate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:layout_marginLeft="16dp"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title0"
+         />
+
+    <Button
+        android:id="@+id/save_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toRightOf="@id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@id/title0"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextNumber"
+        android:text="save"
+        android:background="@drawable/round_red"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

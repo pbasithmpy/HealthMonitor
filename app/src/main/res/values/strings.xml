@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Health Monitor</string>
+    <string name="title_patient">Patient</string>
+    <string name="title_room">Room</string>
+    <string name="title_profile">Profile</string>
+    <string name="group_details"><b>Project guide:</b>\nDr. Binu L S\n\n<b>Project members:</b>\nAbubaker Rashad P V \nBasith P \nFaizal Babu C P \nSyamkrishnan T U</string>
+    <string name="component_details"><b>Microcontroller:</b>\nESP8266 NodeMCU\n\n<b>Sensors:</b>\nPulse Oxymeter (max30100) \ntemperature sensor (lm35) \ntemperature humidity sensor (dht11)</string>
+</resources>
